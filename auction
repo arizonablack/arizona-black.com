@@ -1,0 +1,3594 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="LmY0VmxXQWdMS3EcWmZ2FBYwXicrLg1QShZhGhYhLyR9HHMMPgQwCw==">
+
+    <!-- Title -->
+    <title>Действующие аукционы - Arizona RolePlay</title>
+
+    <!-- Other -->
+    <link href="css/style.min.css@11" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script></head>
+<body>
+
+    <style>#snowfall{position:relative;overflow:hidden;}</style>
+    <div id="snowfall">
+
+    <nav class="az-games-bar hidden-xs">
+    <div class="container">
+        <ul>
+            <li><a href="http://arizona-games.com/" target="_blank" title="">Az Games</a></li>
+        </ul>
+    </div>
+</nav>
+    <nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" class="navbar-toggle collapsed">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" title="Главная страница" class="navbar-brand">
+                <img src="images/navbar-logo.png" alt="Homepage" class="navbar-brand-image hidden-md"/>
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="/" title="Главная страница проекта">Главная</a></li>
+                <li><a href="news/list" title="Новости проекта Az Games">Новости</a></li>
+                <li><a href="howtostart" title="Инструкция как начать играть в SAMP">Как начать игру?</a></li>
+                <li><a href="http://forum.arizona-rp.com" title="Форум Arizona RolePlay">Форум</a></li>
+                <li><a href="donate" title="Купить Az монеты">Пожертвование</a></li>
+                <li><a href="auction">Аукционы</a></li>
+                <li class="hidden-lg"><a href="profile/in" title="">Личный кабинет</a></li>
+            </ul>
+            <a href="profile/in" title="Войти в ЛК" class="navbar-log-in hidden-xs hidden-sm hidden-md"><i class="fa fa-user"></i>Личный кабинет</a>
+        </div>
+    </div>
+</nav>
+
+    <div id="carousel" data-ride="carousel" class="carousel slide carousel-fade hidden-xs">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <div role="listbox" class="carousel-inner">
+        <div class="item active">
+            <img src="images/carousel-1.png" alt="First slide"/>
+            <div class="carousel-caption">
+                <h3>Начни играть на Arizona Role Play</h3>
+                <p style="color:#e6e4e4">Играй в GTA San-Andreas по сети бесплатно. Тебя ждут тысяча игроков<br>и интересный игровой мир американских штатов!</p>
+                <p class="text-center"><a class="button" href="howtostart">Начать игру</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-2.png" alt="Second slide"/>
+            <div class="carousel-caption">
+                <h3>Стань бесстрашным бандитом</h3>
+                <p style="color:#e6e4e4">Вступай в любую опасную группировку штата. Грабь,продавай наркотики,<br>веди войну за территории и стань королём гетто</p>
+                <p class="text-center"><a class="button" href="howtostart">Начать игру</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/carousel-3.png" alt="Second slide"/>
+            <div class="carousel-caption">
+                <h3>Путешествуй свободно</h3>
+                <p style="color:#e6e4e4">Для тебя открыт безграничный открытый мир, по которому<br>спокойно можно путешествовать</p>
+                <p class="text-center"><a class="button" href="howtostart">Начать игру</a></p>
+            </div>
+        </div>
+    </div>
+    <a href="auction#carousel" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Prev</span></a>
+    <a href="auction#carousel" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+</div>
+    <div class="a-wrapper">
+        <div class="container">
+
+            <div class="column-left">
+                                
+
+
+<div class="page-title">Аукционы</div>
+
+	<div class="profile-container text-center">Участвовать в аукционах возможно по субботам и воскресеньям, а создавать их, только по субботам.</div>
+<style>
+.auction-sort {
+	padding:15px;
+	color:#a4a4a4;
+	text-align:right;
+}
+	.auction-sort a {
+		color:#a4a4a4;
+	}
+	.auction-sort a:hover {
+		color:#a4a4a4;
+	}	
+</style>
+<div class="auction-sort">
+	<span>Сортировка:</span>
+	<a href="http://arizona-rp.com/auction?sort=1" title="Сортировать по количеству участников">по ставкам</a> | 
+	<a href="http://arizona-rp.com/auction?show=1" title="Показать те, где можно купить валюту">по деньгами</a> | 
+	<a href="http://arizona-rp.com/auction?show=2" title="Показать те, где можно купить az-coins">по az-coins</a>
+</div>
+<div class="row margin-15">
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">872 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>11000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024694">1485024694</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63621" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>130</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485107400">1485107400</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63620" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074362">1485074362</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63619" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074917">1485074917</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63618" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485080880">1485080880</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63617" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485080841">1485080841</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63616" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485080797">1485080797</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63615" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">225 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485107117">1485107117</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63614" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485107075">1485107075</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63613" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>157</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024260">1485024260</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63612" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">487 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485106687">1485106687</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63611" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">650 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485106498">1485106498</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63610" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485106200">1485106200</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63609" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">700 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022898">1485022898</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63608" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2250000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>225</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485105361">1485105361</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63607" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>600</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022302">1485022302</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63606" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022285">1485022285</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63605" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>540</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022267">1485022267</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63604" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022252">1485022252</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63603" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022237">1485022237</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63602" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022222">1485022222</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63601" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022207">1485022207</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63600" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022186">1485022186</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63599" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>550</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022166">1485022166</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63598" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022149">1485022149</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63597" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>110</span>
+						<span class="users"><i class="fa fa-users"></i>2</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485104938">1485104938</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63596" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022130">1485022130</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63595" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">5000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022110">1485022110</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63594" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485104866">1485104866</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63593" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">120 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1200000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022035">1485022035</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63592" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>8000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021894">1485021894</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63591" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>140</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022460">1485022460</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63590" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>130</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022333">1485022333</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63589" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>130</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022333">1485022333</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63588" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>130</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022205">1485022205</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63587" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>140</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022057">1485022057</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63586" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>140</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021931">1485021931</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63585" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1100000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>130</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021803">1485021803</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63584" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>600000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485027174">1485027174</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63583" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">154 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021721">1485021721</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63582" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021718">1485021718</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63581" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3500000</span>
+						<span class="users"><i class="fa fa-users"></i>2</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021491">1485021491</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63580" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2700000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485095831">1485095831</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63579" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021429">1485021429</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63578" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485103916">1485103916</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63575" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485028250">1485028250</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63574" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485031473">1485031473</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63562" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2500000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>478</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024475">1485024475</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63561" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>432</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024105">1485024105</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63560" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">194 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485058600">1485058600</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63558" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1600000</span>
+						<span class="users"><i class="fa fa-users"></i>4</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485023212">1485023212</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63551" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>12000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485102376">1485102376</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63549" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485102240">1485102240</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63548" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485102133">1485102133</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63545" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084127">1485084127</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63544" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485101707">1485101707</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63542" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1600000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022276">1485022276</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63540" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">980 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485080722">1485080722</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63539" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2002 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>20000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485098109">1485098109</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63536" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024239">1485024239</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63523" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">105 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>400000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485099776">1485099776</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63522" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485099570">1485099570</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63516" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485025037">1485025037</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63513" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084531">1485084531</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63509" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">224 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2240000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485098394">1485098394</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63506" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">652 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485071763">1485071763</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63505" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">477 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485097765">1485097765</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63502" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485097681">1485097681</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63501" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">420 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485097646">1485097646</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63500" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>170000</span>
+						<span class="users"><i class="fa fa-users"></i>3</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485032813">1485032813</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63499" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">150 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485095467">1485095467</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63476" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">340 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485095404">1485095404</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63475" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1700000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485095256">1485095256</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63473" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">600 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485095056">1485095056</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63469" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485032265">1485032265</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63463" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">232 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485025188">1485025188</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63458" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485093560">1485093560</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63456" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">450 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4200000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485093212">1485093212</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63454" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3999999</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022316">1485022316</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63453" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">560 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5200000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485093012">1485093012</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63451" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485028035">1485028035</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63450" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485027892">1485027892</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63448" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">515 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4250000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485092414">1485092414</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63439" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">455 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485091549">1485091549</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63425" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">340 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485091366">1485091366</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63421" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1600 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>15000000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485022558">1485022558</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63412" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">107 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>750000</span>
+						<span class="users"><i class="fa fa-users"></i>2</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021771">1485021771</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63398" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">350 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485090120">1485090120</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63396" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">190 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485033661">1485033661</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63395" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">120 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485087864">1485087864</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63370" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>280</span>
+						<span class="users"><i class="fa fa-users"></i>2</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485061454">1485061454</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63369" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">130 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485087469">1485087469</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63357" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">452 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485021433">1485021433</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63355" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">750 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485087335">1485087335</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63351" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">390 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485043944">1485043944</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63348" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1030303 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>430</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485023351">1485023351</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63335" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084885">1485084885</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63329" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084763">1485084763</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63327" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084551">1485084551</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63326" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084517">1485084517</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63324" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">160 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1400000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024464">1485024464</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63323" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084389">1485084389</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63321" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">899 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485084386">1485084386</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63319" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485083785">1485083785</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63305" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">167 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485033273">1485033273</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63301" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485083558">1485083558</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63297" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>160</span>
+						<span class="users"><i class="fa fa-users"></i>3</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485083258">1485083258</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63287" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">134 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485056944">1485056944</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63267" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">525 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3750000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485081627">1485081627</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63250" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">240 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1700000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485054983">1485054983</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63246" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>950000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485024887">1485024887</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63245" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">550 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485081010">1485081010</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63242" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1070 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485026844">1485026844</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63241" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485037360">1485037360</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63235" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485079807">1485079807</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63218" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485053310">1485053310</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63215" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">232 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485079551">1485079551</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63213" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">147 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>300000</span>
+						<span class="users"><i class="fa fa-users"></i>6</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485079525">1485079525</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63211" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1500000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>270</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485052880">1485052880</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63208" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485078221">1485078221</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63196" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485078112">1485078112</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63194" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">900 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485077970">1485077970</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63191" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">191 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485027305">1485027305</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63183" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485034502">1485034502</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63182" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">230  AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2100000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485077063">1485077063</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63174" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">550 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485076749">1485076749</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63168" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485076659">1485076659</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63165" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">150 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485076510">1485076510</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63157" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2700000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485075949">1485075949</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63140" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>14500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485025465">1485025465</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63137" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">212 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485075033">1485075033</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63119" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074766">1485074766</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63111" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4700000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074621">1485074621</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63108" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">210 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074247">1485074247</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63094" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>176</span>
+						<span class="users"><i class="fa fa-users"></i>2</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074195">1485074195</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63091" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>280</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074143">1485074143</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63088" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485074093">1485074093</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63084" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">600 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>7000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485073756">1485073756</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63078" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">230 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485073395">1485073395</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63074" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">245 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485072356">1485072356</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63060" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>16700000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485072124">1485072124</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63051" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485025260">1485025260</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63049" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485071929">1485071929</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63045" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">650 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6400000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485028273">1485028273</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63031" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">680 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>6800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485071310">1485071310</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63026" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>30000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485071179">1485071179</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63023" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">500 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>49500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485071143">1485071143</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63022" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">180 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>500000</span>
+						<span class="users"><i class="fa fa-users"></i>8</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485070762">1485070762</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63013" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">112 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485070323">1485070323</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63005" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485070281">1485070281</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63003" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485070249">1485070249</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63002" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">3200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>30000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485070226">1485070226</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/63001" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">40000000 $ [DONATE]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>7500</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485069723">1485069723</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62996" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>9000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485069193">1485069193</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62982" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485068132">1485068132</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62974" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">451 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4200000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485028014">1485028014</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62968" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">300 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485067599">1485067599</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62967" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3800000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485067337">1485067337</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62963" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">511 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>5000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485023763">1485023763</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62952" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">256 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485065759">1485065759</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62949" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1040 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10400000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485064277">1485064277</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62938" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">100 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>1000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485063731">1485063731</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62935" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">110 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485062367">1485062367</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62927" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">357 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>2900000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485056323">1485056323</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62866" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">570 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>4000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485055783">1485055783</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62858" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">2000 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>20000000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485049727">1485049727</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62846" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">400 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>3500000</span>
+						<span class="users"><i class="fa fa-users"></i>0</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485049403">1485049403</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62845" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">1200 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>10550000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485045918">1485045918</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62835" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+			<div class="col-md-6 col-xs-12">
+			<div class="auction">
+				<div class="auction-container">
+					<img src="images/auction-bg.jpg" alt="Аукцион SAMP Arizona"/>
+					<div class="auction-title">750 AZ-Coins [BANK]</div>
+					<div class="auction-info">
+						<span class="username"><i class="fa fa-dollar"></i>7300000</span>
+						<span class="users"><i class="fa fa-users"></i>1</span>
+						<span class="countdown"><i class="fa fa-clock-o"></i><span class="time-to-end" data-end="1485026363">1485026363</span></span>
+					</div>
+					<a href="http://arizona-rp.com/auction/view/62825" title="Подробная информация об аукционе">
+						<div class="auction-view">
+							<span class="fa fa-search"></span>
+							<span class="full">Подробнее</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>var currentTimestamp = 1485021436;</script>
+
+
+            </div>
+
+            <div class="column-right">
+                <div id="youtube-video-hts" style="margin-bottom:30px"></div>
+
+                <div class="content-container">
+    <header class="content-head">Мониторинг</header>
+    <div class="content-body monitoring">
+        <div class="row online">
+            <div class="col-xs-3 online-value" id="current-online">000</div>
+            <div class="col-xs-3 online-desc">Средний<br>онлайн</div>
+            <div class="col-xs-3 online-value" id="record-online">000</div>
+            <div class="col-xs-3 online-desc">Максимальный<br>онлайн</div>
+        </div>
+        <hr/>
+
+        <script>var current = 0,record = 0;</script>
+				                <script>current += 314;record += 442;</script>
+                <div class="row server">
+                    <div class="clearfix">
+                        <div class="info">
+                            <div class="hostname">Arizona RolePlay Phoenix</div>
+                            <div class="ip">46.105.240.185:7771</div>
+                        </div>
+                        <div class="players">314<span class="color-grad"> / 1000</span></div>
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li><a href="http://servers-samp.ru/server-8632" title="Проголосовать за сервер">Голосовать<br>за сервер</a></li>
+                            <li><a href="map/1" title="Карта домов и бизнесов в штате">Карта<br>штата</a></li>
+                            <li><a href="rating/cash/1" title="Рейтинги и мониторинги">Рейтинги<br>сервера</a></li>
+                            <li><a href="mon/fractions/1" title="Состав членов организации">Составы<br>фракций</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('current-online').innerHTML = current;
+                    document.getElementById('record-online').innerHTML = record;
+                </script>
+                        <script>current += 366;record += 437;</script>
+                <div class="row server">
+                    <div class="clearfix">
+                        <div class="info">
+                            <div class="hostname">Arizona RolePlay Tucson</div>
+                            <div class="ip">46.105.240.185:7772</div>
+                        </div>
+                        <div class="players">366<span class="color-grad"> / 1000</span></div>
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li><a href="http://servers-samp.ru/server-155370" title="Проголосовать за сервер">Голосовать<br>за сервер</a></li>
+                            <li><a href="map/2" title="Карта домов и бизнесов в штате">Карта<br>штата</a></li>
+                            <li><a href="rating/cash/2" title="Рейтинги и мониторинги">Рейтинги<br>сервера</a></li>
+                            <li><a href="mon/fractions/2" title="Состав членов организации">Составы<br>фракций</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('current-online').innerHTML = current;
+                    document.getElementById('record-online').innerHTML = record;
+                </script>
+                        <script>current += 255;record += 372;</script>
+                <div class="row server">
+                    <div class="clearfix">
+                        <div class="info">
+                            <div class="hostname">Arizona RolePlay Scottdale</div>
+                            <div class="ip">46.105.240.185:7773</div>
+                        </div>
+                        <div class="players">255<span class="color-grad"> / 1000</span></div>
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li><a href="http://servers-samp.ru/server-7664" title="Проголосовать за сервер">Голосовать<br>за сервер</a></li>
+                            <li><a href="map/3" title="Карта домов и бизнесов в штате">Карта<br>штата</a></li>
+                            <li><a href="rating/cash/3" title="Рейтинги и мониторинги">Рейтинги<br>сервера</a></li>
+                            <li><a href="mon/fractions/3" title="Состав членов организации">Составы<br>фракций</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('current-online').innerHTML = current;
+                    document.getElementById('record-online').innerHTML = record;
+                </script>
+                        <script>current += 769;record += 996;</script>
+                <div class="row server">
+                    <div class="clearfix">
+                        <div class="info">
+                            <div class="hostname">Arizona RolePlay Chandler</div>
+                            <div class="ip">46.105.240.185:7774</div>
+                        </div>
+                        <div class="players">769<span class="color-grad"> / 1000</span></div>
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li><a href="http://servers-samp.ru/server-5981" title="Проголосовать за сервер">Голосовать<br>за сервер</a></li>
+                            <li><a href="map/4" title="Карта домов и бизнесов в штате">Карта<br>штата</a></li>
+                            <li><a href="rating/cash/4" title="Рейтинги и мониторинги">Рейтинги<br>сервера</a></li>
+                            <li><a href="mon/fractions/4" title="Состав членов организации">Составы<br>фракций</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('current-online').innerHTML = current;
+                    document.getElementById('record-online').innerHTML = record;
+                </script>
+                        <script>current += 784;record += 940;</script>
+                <div class="row server">
+                    <div class="clearfix">
+                        <div class="info">
+                            <div class="hostname">Arizona RolePlay Brainburg</div>
+                            <div class="ip">46.105.240.185:7775</div>
+                        </div>
+                        <div class="players">784<span class="color-grad"> / 1000</span></div>
+                    </div>
+                    <div class="selector">
+                        <ul>
+                            <li><a href="http://servers-samp.ru/server-160844" title="Проголосовать за сервер">Голосовать<br>за сервер</a></li>
+                            <li><a href="map/5" title="Карта домов и бизнесов в штате">Карта<br>штата</a></li>
+                            <li><a href="rating/cash/5" title="Рейтинги и мониторинги">Рейтинги<br>сервера</a></li>
+                            <li><a href="mon/fractions/5" title="Состав членов организации">Составы<br>фракций</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    document.getElementById('current-online').innerHTML = current;
+                    document.getElementById('record-online').innerHTML = record;
+                </script>
+                  </div>
+</div>
+
+                
+		<div class="content-container">
+			<header class="content-head">Опрос</header>
+			<div class="content-body">
+				<p class="interview-question"><b>Как Вы относитесь к последнему обновлению?</b></p>
+									<div class="interview-variant">
+		                <div class="m-b-20">
+		                    <div class="progress-bar-data">
+		                        <span class="progress-bar-name">Отлично, мне понравилось - 405 </span>
+		                        		                        <span class="progress-bar-value">(80%)</span>
+		                    </div>
+		                    <div class="progress-bar-bar">
+		                        <div style="width:80%" class="value"></div>
+		                    </div>
+		                </div>
+		                <div class="vote-container">
+		                	<a href="interview/vote/65">Голосовать</a>
+		                </div>
+					</div>
+					
+									<div class="interview-variant">
+		                <div class="m-b-20">
+		                    <div class="progress-bar-data">
+		                        <span class="progress-bar-name">Неплохо, но есть баги - 53 </span>
+		                        		                        <span class="progress-bar-value">(10%)</span>
+		                    </div>
+		                    <div class="progress-bar-bar">
+		                        <div style="width:10%" class="value"></div>
+		                    </div>
+		                </div>
+		                <div class="vote-container">
+		                	<a href="interview/vote/66">Голосовать</a>
+		                </div>
+					</div>
+					
+									<div class="interview-variant">
+		                <div class="m-b-20">
+		                    <div class="progress-bar-data">
+		                        <span class="progress-bar-name">Плохое обновление - 49 </span>
+		                        		                        <span class="progress-bar-value">(10%)</span>
+		                    </div>
+		                    <div class="progress-bar-bar">
+		                        <div style="width:10%" class="value"></div>
+		                    </div>
+		                </div>
+		                <div class="vote-container">
+		                	<a href="interview/vote/67">Голосовать</a>
+		                </div>
+					</div>
+					
+							</div>
+		</div>
+
+
+
+	
+                <div class="content-container">
+                    <header class="content-head">Мы в контакте</header>
+                    <div class="content-body">
+                        <div id="vk_groups">
+                            <script type="text/javascript" src="http://vk.com/js/api/openapi.js?127"></script>
+                            <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "270", height: "400", color1: '262626', color2: 'FFFFFF', color3: 'FFFFFF'}, 62212254);</script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+	<div class="container">
+		<div class="copyright">AZ-GAMES&copy;2016. Все права защищены. Любое копирование материала запрещено!</div>
+	</div>
+</footer>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter30951906 = new Ya.Metrika({
+                    id:30951906,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- /Yandex.Metrika counter -->
+<noscript><div><img src="https://mc.yandex.ru/watch/30951906" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </div>
+
+<script src="js/jquery.prettyembed.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+<script src="assets/3be89af7/yii.js"></script>
+<script src="http://zeptojs.com/zepto.min.js"></script>
+<script src="js/snowfall.jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">jQuery(document).ready(function () {
+convertTime();function convertTime(){jQuery('span.time-to-end').each(function(){var t=jQuery(this).data('end')-currentTimestamp,e=Math.floor(t/3600);10>e&&(e='0'+e),t-=3600*e;var n=Math.floor(t/60);10>n&&(n='0'+n),t-=60*n,10>t&&(t='0'+t),jQuery(this).text(e+':'+n+':'+t)}),currentTimestamp++}setInterval(convertTime,1e3);
+jQuery('#youtube-video-hts').prettyEmbed({videoID:'-AxTSTF709k'});
+jQuery('#snowfall').snowfall({flakeCount:150});
+jQuery('[data-toggle=tooltip]').tooltip();
+});</script></body>
+</html>
